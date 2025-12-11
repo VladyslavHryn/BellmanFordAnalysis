@@ -21,7 +21,7 @@ def run_experiments():
 
     filename = 'results_extended.csv'
 
-    print(f"--- Починаємоексперимент ---")
+    print(f"--- Починаємо експеримент ---")
     print(f"Результати будуть записані у файл: {filename}")
     print(f"Кількість розмірів: {len(sizes)}")
     print(f"Кількість повторень на кожну точку: {repetitions}")
@@ -69,10 +69,11 @@ def run_experiments():
 
 
             print(
-                f"--> Завершено для розміру N={n}. Останній час (списки/матриця): {avg_time_list:.5f}s / {avg_time_matrix:.5f}s")
+                f"Завершено для розміру N={n}. Останній час (списки/матриця): {avg_time_list:.5f}s / {avg_time_matrix:.5f}s")
 
     print(f"\n✅ Експерименти завершено! Дані збережено в '{filename}'.")
 
 
 if __name__ == "__main__":
+
     run_experiments()
